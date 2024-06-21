@@ -25,10 +25,10 @@ Create 4 Subnets: The subnet is a way for us to group our resources within the V
 
 For our setup, we shall be creating the following subnets with the corresponding IP ranges.
 
-demo-public-subnet-1 | CIDR (10.0.1.0/24) | Availability Zone (us-east-1a) \n
-demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b) /n
-demo-private-subnet-3 | CIDR (10.0.3.0/24) | Availability Zone (us-east-1a)
-demo-private-subnet-4 | CIDR(10.0.4.0/24) | Availability Zone (us-east-1b)
+demo-public-subnet-1 | CIDR (10.0.1.0/24) | Availability Zone (us-east-1a) <br>
+demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b) <br>
+demo-private-subnet-3 | CIDR (10.0.3.0/24) | Availability Zone (us-east-1a) <br>
+demo-private-subnet-4 | CIDR(10.0.4.0/24) | Availability Zone (us-east-1b) <br>
 
 ### Public Subnets
 ![8](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f420b304-a083-4fbb-a6e5-1988dc2c2e8e)
