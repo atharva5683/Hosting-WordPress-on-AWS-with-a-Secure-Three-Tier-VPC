@@ -15,7 +15,7 @@ To create route tables, navigate over to the Route Tables page and click on Crea
 The route aalows the public route table to route traffic to the internet.
 
 To do this, make sure you are on the route tab, then click "edit routes", then click "add route", under "destination", type in "0.0.0.0/0" in the box. After that, under "target", select "internet gateway", then click "save changes"
-Tier-VPC/assets/160429511/17972966-6f3f-4936-8949-3e878be6b64f)
+
 ![6](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/83dacd0b-ff8b-46ca-af75-3444baa0e8e3)
 ![7](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/86dbf6bd-5893-4a1b-a36c-9f0883a4a1e0)
 ![8](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/319f511e-2bd2-4978-814c-71e2cd8af9be)
