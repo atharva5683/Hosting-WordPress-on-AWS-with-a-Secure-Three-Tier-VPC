@@ -26,7 +26,7 @@ Create 4 Subnets: The subnet is a way for us to group our resources within the V
 For our setup, we shall be creating the following subnets with the corresponding IP ranges.
 
 demo-public-subnet-1 | CIDR (10.0.1.0/24) | Availability Zone (us-east-1a) \n
-demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b)/n
+demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b) /n
 demo-private-subnet-3 | CIDR (10.0.3.0/24) | Availability Zone (us-east-1a)
 demo-private-subnet-4 | CIDR(10.0.4.0/24) | Availability Zone (us-east-1b)
 
