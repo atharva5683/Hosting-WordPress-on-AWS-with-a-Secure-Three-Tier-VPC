@@ -21,14 +21,16 @@ To do that, select "action" and then edit "vpc setting". In the next page that o
 
 
 ## Create Subnets.
-Create 4 Subnets: The subnet is a way for us to group our resources within the VPC with their IP range. A subnet can be public or private. EC2 instances within a public subnet have public IPs and can directly access the internet while those in the private subnet does not have public IPs and can only access the internet through a NAT gateway.
+The subnet is a way for us to group our resources within the VPC with their IP range. A subnet can be public or private. EC2 instances within a public subnet have public IPs and can directly access the internet while those in the private subnet does not have public IPs and can only access the internet through a NAT gateway.
 
 For our setup, we shall be creating the following subnets with the corresponding IP ranges.
 
-demo-public-subnet-1 | CIDR (10.0.1.0/24) | Availability Zone (us-east-1a) <br>
-demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b) <br>
-demo-private-subnet-3 | CIDR (10.0.3.0/24) | Availability Zone (us-east-1a) <br>
-demo-private-subnet-4 | CIDR(10.0.4.0/24) | Availability Zone (us-east-1b) <br>
+public-subnet-1 | CIDR (10.0.0.0/24) | Availability Zone (us-east-1a) <br>
+public-subnet-2 | CIDR (10.0.1.0/24) | Availability Zone (us-east-1b) <br>
+private-subnet-1 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1a) <br>
+private-subnet-2 | CIDR(10.0.3.0/24) | Availability Zone (us-east-1b) <br>
+private-subnet-3 | CIDR (10.0.4.0/24) | Availability Zone (us-east-1a) <br>
+private-subnet-4 | CIDR(10.0.5.0/24) | Availability Zone (us-east-1b) <br>
 
 ### Public Subnets
 ![8](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f420b304-a083-4fbb-a6e5-1988dc2c2e8e)
@@ -49,3 +51,16 @@ To accomplish this, choose the first subnet, click "action," "edit subnets setti
 ![16](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f813a11c-af3b-470c-b534-77cc4d12ca5b)
 
 Repeat the same step for the second subnet.
+## Private subnet.
+We will design 4 private subnets in accordance with our vpc reference architecture. Click "create subnets" after selecting "subnets" on the left side of your VPC dashboard. Make sure you only see the two public subnets that were previously formed by filtering by the Dev vpc that was built earlier.
+![17](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/1f40ec1d-c8f0-4cd4-b1d4-0f7a4e0731df)
+
+Do the same for the remaining three(3) subnets by following the VPC reference architecture, see screenshots below.
+
+![18](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/5da64575-7ada-4837-965d-678aa48b8532)
+![19](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/6615e713-eb5f-452c-81cd-45619a7e19cc)
+![20](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/4b40e532-4870-4538-8c0d-d62f25098da7)
+
+TO see all the subnets(6), filter by the dev vpc.
+
+![21](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/a60173a7-63b4-42e0-a8fb-8d7fd4b229bb)
