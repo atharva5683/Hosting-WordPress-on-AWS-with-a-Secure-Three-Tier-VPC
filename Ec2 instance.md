@@ -7,3 +7,15 @@ The ec2 instance that will be used to install WordPress in the public subnet az1
 ![3](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/77a92538-6068-4660-adbc-23349c211eea)
 ![4](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/514303ab-406d-42c2-a47b-2414fcee7043)
 ![5](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/40f7a45f-0c48-47d7-9037-5db9873fbf43)
+
+
+# SSH INTO THE SERVER
+
+Next step is to ssh into the server created
+
+![1](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/2cfacd18-cddb-48e0-b448-4d6b576f7bfc)
+
+
+After logging in to the server, use the following commands to install WordPress and transfer the files to efs. Each command has an explanation at the end explaining what it does.
+
+Remember to update the mount information in the first command before executing the instructions. To do this, go back to the efs you created, copy the mount information, and then return to the code to edit it.
