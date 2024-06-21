@@ -20,7 +20,7 @@ To do that, select "action" and then edit "vpc setting". In the next page that o
 ![7](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/5fd5beee-23d0-40d1-8603-ba6f8d9b83b5)
 
 
-### Create Subnets.
+## Create Subnets.
 Create 4 Subnets: The subnet is a way for us to group our resources within the VPC with their IP range. A subnet can be public or private. EC2 instances within a public subnet have public IPs and can directly access the internet while those in the private subnet does not have public IPs and can only access the internet through a NAT gateway.
 
 For our setup, we shall be creating the following subnets with the corresponding IP ranges.
@@ -30,4 +30,18 @@ demo-public-subnet-2 | CIDR (10.0.2.0/24) | Availability Zone (us-east-1b)
 demo-private-subnet-3 | CIDR (10.0.3.0/24) | Availability Zone (us-east-1a)
 demo-private-subnet-4 | CIDR(10.0.4.0/24) | Availability Zone (us-east-1b)
 
+### Public Subnets
+![8](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f420b304-a083-4fbb-a6e5-1988dc2c2e8e)
+![9](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/89cb0360-5aca-4fea-9263-93e8a4b7bf7d)
+![10](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/e745e125-bb58-406b-8486-6ebf39fe84c6)
+To create our second subnet, just follow the same steps as for the first one: choose "us-east-1b" for availability zones and name it "public subnet AZ2" under "subnet name". Enter "10.0.0.1.0/24" under the IPv4 Cidr bock, scroll down, and select "Create subnets." Use the generated VPC as a filter to view the two subnets.
+![11](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f9444c4a-9218-45b3-a4e6-ec619dc810e7)
+![12](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/9937877c-0da9-4042-a383-1a6d9c6a6987)
+![13](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/35fdcd63-2ff9-4a38-b8f4-746cb6f348db)
+### enable auto-assign ip for the subnet
+To accomplish this, choose the first subnet, click "action," "edit subnets settings," activate "auto-assign public ipv4 address" under "auto-assign ip setting," scroll down, and click "save."
+![14](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/ddf84289-dfce-4988-ae7a-e47db5cf42d6)
+![15](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/a6167166-f3b8-4c03-8b64-34e1f61f90ec)
+![16](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f813a11c-af3b-470c-b534-77cc4d12ca5b)
 
+Repeat the same step for the second subnet.
