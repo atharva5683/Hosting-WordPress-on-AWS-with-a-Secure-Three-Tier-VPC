@@ -1,4 +1,4 @@
-# Create Two Route Tables
+# Create  Route Tables
 
 Route tables is a set of rule that determines how data moves within our network. We need two route tables; private route table and public route table. The public route table will define which subnets that will have direct access to the internet ( ie public subnets) while the private route table will define which subnet goes through the NAT gateway (ie private subnet).
 
