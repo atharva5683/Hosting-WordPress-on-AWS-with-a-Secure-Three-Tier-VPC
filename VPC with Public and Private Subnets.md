@@ -53,6 +53,7 @@ To accomplish this, choose the first subnet, click "action," "edit subnets setti
 Repeat the same step for the second subnet.
 ## Private subnet.
 We will design 4 private subnets in accordance with our vpc reference architecture. Click "create subnets" after selecting "subnets" on the left side of your VPC dashboard. Make sure you only see the two public subnets that were previously formed by filtering by the Dev vpc that was built earlier.
+
 ![17](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/1f40ec1d-c8f0-4cd4-b1d4-0f7a4e0731df)
 
 Do the same for the remaining three(3) subnets by following the VPC reference architecture, see screenshots below.
