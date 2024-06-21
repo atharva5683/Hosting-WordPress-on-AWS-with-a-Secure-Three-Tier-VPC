@@ -45,7 +45,7 @@ Like before select the "subnet associations" tab and then click "edit subnet ass
 
 ### For private route table az2
 
-[5 2](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/9d123d3b-c4e9-4c88-ae51-61979f99353c)
+![5 2](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/9d123d3b-c4e9-4c88-ae51-61979f99353c)
 
 Next step add a route to the private route table az2 to route traffic to the internet through the nat gateway in the public subnet az2. Follow the steps we use in creating the previous one.
 ![18](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f2967cc0-c848-4160-85f3-1cb280c2d9dd)
