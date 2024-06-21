@@ -10,7 +10,8 @@
  
  ![1](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/bf115ebe-3976-42a3-8a2a-f0a52cec51b1)
  ![2](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/c049bac9-04c3-4e46-89ef-679e00643ed9)
- ![3](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/341d2124-3256-41b2-8122-25bbba635e5d)
+![5](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/19ad9b86-5b6e-4371-aecb-c34bf8ce4ddc)
+
 
  Next we create the second nat gateway in the public subnet az2. see screenshots below
 
