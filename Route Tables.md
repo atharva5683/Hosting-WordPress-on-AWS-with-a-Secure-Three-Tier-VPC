@@ -31,26 +31,27 @@ To this, select the "subnet association" tab, then click "edit subnet associatio
 Next we add route to the the private route table az1 to route traffic to the internet through the nat gateway in the public subnet az1
 
 To this, like before, select the "route" tab and click "edit route", click "add route", under "destination", type "0.0.0.0/0 and click it. under "local" select our nat gateway az1 in the public subnet and hit "save changes".
-5
-12
-13
-14
+![5](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/8adff94c-4e6b-45b0-8a8c-3f7388690207)
+![12](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/00b01468-4e59-4b7f-acab-b98d29fb205c)
+![13](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/130e4e60-0f71-4696-a84f-4bc9b87f3895)
+![14](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/c07f0fd1-e557-441e-ab09-7ccc20f1982d)
 
 Next associte this route table with "private app subnet az1" and "private data subnet az1" following the nat gateway reference architecture.
 
 Like before select the "subnet associations" tab and then click "edit subnet associations". Under "available subnets", select private app subnet az1 and private data subnet az1 respectively and click "save associations".
-15
-16
-17
+![15](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/50fb2903-43cc-4e19-bd8b-ee5fb2aad611)
+![16](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/3dba05e2-7ccd-41f0-8e72-6486b477700c)
+![17](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f55906ce-a6cc-4552-9268-a05ec5adf012)
 
 ### For private route table az2
 
-5.2
+[5 2](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/9d123d3b-c4e9-4c88-ae51-61979f99353c)
 
 Next step add a route to the private route table az2 to route traffic to the internet through the nat gateway in the public subnet az2. Follow the steps we use in creating the previous one.
-18
-19
+![18](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/f2967cc0-c848-4160-85f3-1cb280c2d9dd)
+![19](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/36275220-5690-4efd-907b-89a6941a36be)
+
 
 Next step associate this route table with private app subnet az2 and private data subnet az2, like before, follow the previous steps.
-20
-21
+![20](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/cdbc174f-d197-4a2f-92ae-52b241d3a057)
+![21](https://github.com/atharva5683/Hosting-WordPress-on-AWS-with-a-Secure-Three-Tier-VPC/assets/160429511/0bb15425-f31c-4cb6-bc78-cd04c8dd8b54)
