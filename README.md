@@ -174,3 +174,4 @@ The three-tier architecture consists of:
    - Open a web browser and navigate to your domain.
    - Follow the on-screen instructions to complete the WordPress installation.
    - Enter your site title, admin username, password, and email.
+### Reference : https://www.aosnote.com/store
