@@ -90,8 +90,18 @@ The three-tier architecture consists of:
      sudo mkdir /var/www/html
      sudo mount -t efs fs-XXXXXX:/ /var/www/html
      ```
+### Step 7: Set up Bastion Host
 
-### Step 7: Install and Configure WordPress
+1. **Launch a Bastion Host**:
+   - Launch an instance in the public subnet. This instance will serve as the bastion host.
+
+2. **SSH into the Bastion Host**:
+   - Use SSH to connect to the bastion host instance in the public subnet.
+
+3. **SSH into the Private Subnet Instance**:
+   - From the bastion host, use SSH to connect to the instance in the private subnet.
+     
+### Step 8: Install and Configure WordPress
 
 1. **Install Apache and PHP**:
    - On the Web and Application EC2 instances:
@@ -135,21 +145,21 @@ The three-tier architecture consists of:
      define('DB_HOST', 'your_rds_endpoint');
      ```
 
-### Step 8: Set Up Application Load Balancer
+### Step 9: Set Up Application Load Balancer
 
 1. **Create an Application Load Balancer**:
    - Navigate to the EC2 Dashboard and create an Application Load Balancer.
    - Configure it to distribute traffic across your Web EC2 instances.
    - Set up health checks to monitor instance health.
 
-### Step 9: Set Up Autoscaling Group
+### Step 10: Set Up Autoscaling Group
 
 1. **Create an Autoscaling Group**:
    - Navigate to EC2 and create a Launch Configuration with the Web Server AMI.
    - Create an Autoscaling Group and attach it to the Application Load Balancer.
    - Configure scaling policies based on traffic load.
 
-### Step 10: Set Up Certificate Manager
+### Step 11: Set Up Certificate Manager
 
 1. **Request an SSL Certificate**:
    - Navigate to AWS Certificate Manager and request a public certificate for your domain.
@@ -157,7 +167,7 @@ The three-tier architecture consists of:
 2. **Attach the Certificate to the Load Balancer**:
    - Configure the Application Load Balancer to use the SSL certificate for HTTPS traffic.
 
-### Step 11: Configure Route 53
+### Step 12: Configure Route 53
 
 1. **Register or Transfer Your Domain**:
    - Navigate to Route 53 and register a new domain or transfer an existing domain.
@@ -168,7 +178,7 @@ The three-tier architecture consists of:
 3. **Point Your Domain to Your Load Balancer**:
    - Create an A record in Route 53 pointing to your Application Load Balancer.
 
-### Step 12: Complete the WordPress Installation
+### Step 13: Complete the WordPress Installation
 
 1. **Access Your WordPress Site**:
    - Open a web browser and navigate to your domain.
