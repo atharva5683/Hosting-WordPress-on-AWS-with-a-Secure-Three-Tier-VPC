@@ -185,3 +185,4 @@ The three-tier architecture consists of:
    - Follow the on-screen instructions to complete the WordPress installation.
    - Enter your site title, admin username, password, and email.
 ### Reference : https://www.aosnote.com/store
+                https://github.com/georgeonalo/Host-a-wordpress-website-on-AWS?tab=readme-ov-file#security-group-reference-architecture-for-our-project
